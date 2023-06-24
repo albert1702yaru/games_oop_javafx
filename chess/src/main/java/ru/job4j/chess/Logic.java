@@ -23,7 +23,7 @@ public final class Logic {
     }
 
     private boolean free(Cell[] steps) throws OccupiedCellException, FigureNotFoundException {
-        for (Cell i : steps){
+        for (Cell i : steps) {
             for (Figure j : figures) {
                 if (j != null && j.position() == i) {
                     throw new OccupiedCellException("Occupied Cell " + i);
